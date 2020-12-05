@@ -43,8 +43,8 @@ const Moviescreen = () =>{
                            <p>Wife</p>
                        </div>
                        <div>
-                           <img  src={process.env.PUBLIC_URL+ "/images/You.jpg"} alt="netflix-img"/>
-                           <p>You</p>
+                           <img  src={process.env.PUBLIC_URL+ "/images/holydate.jpg"} alt="netflix-img"/>
+                           <p>Holidate</p>
                        </div>
                     </section>
             </section>
