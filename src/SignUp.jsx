@@ -31,7 +31,7 @@ const SignUp = () =>{
          </div>
          <footer>
                  <section>
-                    <p>Questions? Call 000-800-040-1843</p>
+                    <p className="call">Questions? Call 000-800-040-1843</p>
                     <article>
                        <div>
                           <p><a href={href}>FAQ</a></p>

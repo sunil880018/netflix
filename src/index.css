@@ -332,8 +332,8 @@ footer article{
   margin-top: 2rem;
 }
 footer  p{
-  color: #757575;
-  font-size: 14px;
+  color: #757575;;
+  font-size: 1rem;
   line-height: 2.5;
 }
 footer a{
@@ -508,6 +508,13 @@ form div p{
     padding-left: 20px;
     padding-right: 20px;
   }
+  header img {
+    width: 120px;
+    height: 30px;
+  }
+  header a{
+    padding: 8px 7px;
+  }
   .backposter {
     height: 500px;
   }
@@ -523,10 +530,13 @@ form div p{
     font-size: 1.7rem;
   }
   .notice h2 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+    width: 100%;
   }
   .notice h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 1.3rem;
   }  
   .notice input {
     width: 60%;
@@ -551,13 +561,14 @@ form div p{
    .fest-banner h2 {
     font-size: 1.2rem;
     margin-bottom: 30px;
+    margin-top: 10px;
    } 
    .fest-banner img{
      margin-right: 0;
    }
    .fest-banner div a {
     padding: 13px 10px;
-    font-weight: 300;
+    font-weight: bold;
     font-size: 13px;
    }
    .enjoy-tv{
@@ -568,30 +579,32 @@ form div p{
    }
    .enjoy-tv h1 {
     font-size: 1.5rem;
-    margin-left: -25px;
+    margin-left: -37px;
    }
    .enjoy-tv h2{
-     font-size: 1rem;
-     margin-left: -70px;
-     margin-top: 14px;
-     line-height: 1.6;
+    font-size: 1rem;
+    margin-left: -70px;
+    margin-top: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
    }
    .enjoy-tv img{
      width: 300px;
    }
    .download-show{
-     flex-direction: column;
+     flex-direction:column-reverse;
      align-items: center;
      padding: 0;
-     height: 500px;
+     height: 600px;
    }
    .download-show h1{
      font-size: 1.7rem;
-     margin-left: -40px;
+     margin-left: -54px;
    }
    .download-show h2{
      font-size: 1.2rem;
-     margin-left: -40px;
+     margin-left: -65px;
+     margin-top: 1rem;
    }
    .watch-everywhere{
      flex-direction: column;
@@ -621,10 +634,10 @@ form div p{
      width: 100%;
    }
    .ques p{
-     font-size: 1rem;
+     font-size: 1.2rem;
    }
    .ans p{
-     font-size: 14px;
+     font-size: 1.1rem;
    }
    .ask-ques article p {
     font-size: 1rem;
@@ -642,11 +655,18 @@ form div p{
   footer article {
     grid-template-columns: repeat(2,1fr);
     grid-gap: 2rem;
+    padding: 1rem;
+  }
+  footer .lang{
+    margin-left: 1rem;
+  }
+  footer .call{
+    margin-left: 1rem;
   }
 
   /* sign in and signup */
   .form{
-    width: 300px;
+    width: 100%;
     height: auto;
     margin-top: 1rem;
   }
