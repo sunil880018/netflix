@@ -56,7 +56,7 @@ header a{
   color: #fff;
   line-height: 1.5;
   font-size: 3rem;
-  width: 80%;
+  width: 100%;
   text-align: center;
 }
 .notice h2{
@@ -522,12 +522,17 @@ form div p{
     height: 400px;
   }
   .notice {
-    width: 300px;
+    width: 100%;
     padding-top: 60px;
-    padding-left: 10px;
-}
+    padding-left: 13px;
+   }
+   .notice div{
+    display: flex;
+    flex-direction: column;
+   }
   .notice h1 {
     font-size: 1.7rem;
+    width: 100%;
   }
   .notice h2 {
     font-size: 1.1rem;
@@ -539,14 +544,17 @@ form div p{
     margin-top: 1.3rem;
   }  
   .notice input {
-    width: 60%;
+    width: 95%;
     height: 31px;
-    font-size: 12px;
+    font-size: 1rem;
    }
    .notice a {
-    width: 20%;
-    padding: 15px 8px;
-    font-size: 10px;
+    padding: 11px 2px;
+    font-size: 1rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 43%;
    }
    .fest-banner img {
     width: 270px;
@@ -643,14 +651,14 @@ form div p{
     font-size: 1rem;
     }
     .ask-ques article input {
-    width: 60%;
+    width: 95%;
     height: 31px;
-    font-size: 12px;
+    font-size: 1rem;
+    margin-bottom: 2rem;
   }
   .ask-ques article a {
-    width: 20%;
-    padding: 15px 8px;
-    font-size: 10px;
+    padding: 11px 7px;
+    font-size: 1rem;
   }
   footer article {
     grid-template-columns: repeat(2,1fr);
