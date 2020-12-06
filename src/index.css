@@ -542,6 +542,7 @@ form div p{
     font-size: 1rem;
     width: 100%;
     margin-top: 1.3rem;
+    font-weight: 400;
   }  
   .notice input {
     width: 95%;
@@ -554,7 +555,7 @@ form div p{
     text-align: center;
     margin: auto;
     margin-top: 20px;
-    width: 43%;
+    width: 50%;
    }
    .fest-banner img {
     width: 270px;
@@ -570,14 +571,16 @@ form div p{
     font-size: 1.2rem;
     margin-bottom: 30px;
     margin-top: 10px;
+    font-weight: 400;
    } 
    .fest-banner img{
      margin-right: 0;
    }
    .fest-banner div a {
-    padding: 13px 10px;
+    padding: 13px 14px;
     font-weight: bold;
     font-size: 13px;
+    margin: 0px 4rem;
    }
    .enjoy-tv{
      flex-direction: column;
@@ -587,7 +590,7 @@ form div p{
    }
    .enjoy-tv h1 {
     font-size: 1.5rem;
-    margin-left: -37px;
+    margin-left: -17px;
    }
    .enjoy-tv h2{
     font-size: 1rem;
@@ -595,6 +598,7 @@ form div p{
     margin-top: 1.5rem;
     line-height: 1.6;
     margin-bottom: 1rem;
+    font-weight: 400;
    }
    .enjoy-tv img{
      width: 300px;
@@ -611,8 +615,9 @@ form div p{
    }
    .download-show h2{
      font-size: 1.2rem;
-     margin-left: -65px;
+     margin-left: -62px;
      margin-top: 1rem;
+     font-weight: 400;
    }
    .watch-everywhere{
      flex-direction: column;
@@ -628,6 +633,7 @@ form div p{
      margin-left: -60px;
      margin-top: 14px;
      line-height: 1.6;
+     font-weight: 400;
    }
    .watch-everywhere img{
      width: 300px;
