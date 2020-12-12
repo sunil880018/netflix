@@ -581,10 +581,11 @@ form div p{
      margin-right: 0;
    }
    .fest-banner div a {
-    padding: 13px 14px;
+    padding: 13px 25px;
     font-weight: bold;
     font-size: 13px;
     margin: 0px 4rem;
+    margin-left: 92px;
    }
    .enjoy-tv{
      flex-direction: column;
