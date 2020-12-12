@@ -1,9 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './index.css';
 
 const SignIn = () =>{
     const href="#";
+    const [email , setEmail] = useState("");
+    const [pass , setPass] = useState("");
+    const emailEvent = (e)=>{
+       setEmail(e.target.value);
+    }
+    const passEvent = (e)=>{
+      setPass(e.target.value);
+   }
+   let check;
+    const login = (e) =>{
+      e.preventDefault();
+      console.log(check);
+      check = localStorage.getItem(email);
+      if(check === null){
+         console.log("login failed");
+         setEmail("");
+         setPass("");
+      }
+      else{
+          setEmail("");
+          setPass("");
+          console.log("success");
+      }
+      
+    }
    return (
        <>
           <div className="backposter" style={{ backgroundImage:`url(${process.env.PUBLIC_URL+ "/images/bg-img.jpg"})`,
@@ -17,9 +42,9 @@ const SignIn = () =>{
                     <section className="form">
                          <form>
                              <h1>Sign In</h1>
-                             <input type="email" placeholder="Enter email or phone Number"/><br/>
-                             <input type="password" placeholder="Password"/><br/>
-                             <button>Sign In</button>
+                             <input type="email" placeholder="Enter email or phone Number" value = {email} onChange={emailEvent}/><br/>
+                             <input type="password" placeholder="Password" value={pass} onChange={passEvent}/><br/>
+                             <button type="submit"  onClick={login}>Sign In</button>
                              <div>
                                  <p>New to Netflix?</p>
                                  <Link to="/SignUp/">Sign up now.</Link>

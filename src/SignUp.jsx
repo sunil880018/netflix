@@ -1,9 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './index.css';
 
 const SignUp = () =>{
     const href="#";
+    const [email , setEmail] = useState("");
+    const [pass , setPass] = useState("");
+
+    const emailEvent = (e)=>{
+       setEmail(e.target.value);
+    }
+    const passEvent = (e)=>{
+      setPass(e.target.value);
+   }
+    const AccountCreate = (e) =>{
+      e.preventDefault();
+      console.log(email,pass);
+      localStorage.setItem(email, pass);
+      setEmail("");
+      setPass("");
+    }
+
+    
+
    return (
        <>
           <div className="backposter" style={{ backgroundImage:`url(${process.env.PUBLIC_URL+ "/images/bg-img.jpg"})`,
@@ -17,9 +36,9 @@ const SignUp = () =>{
                     <section className="form">
                          <form>
                              <h1>Sign Up</h1>
-                             <input type="email" placeholder="Enter email or phone Number"/><br/>
-                             <input type="password" placeholder="Password"/><br/>
-                             <button>Sign Up</button>
+                             <input type="email" placeholder="Enter email or phone Number" value = {email} onChange={emailEvent}/><br/>
+                             <input type="password" placeholder="Password" value={pass} onChange={passEvent}/><br/>
+                             <button type="submit" onClick={AccountCreate}>Sign Up</button>
                              <div>
                                  <p>Login to Netflix?</p>
                                  <Link to ="/SignIn/">Sign in now.</Link>

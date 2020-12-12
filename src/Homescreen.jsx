@@ -97,7 +97,7 @@ const Homescreen = ()=>{
                          <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
                          <div>
                          <input type="email" placeholder="Email address"/>
-                         <a href={href}>GET STARTED <i className="fas fa-chevron-right"></i></a>
+                         <Link to="/SignUp/">GET STARTED <i className="fas fa-chevron-right"></i></Link>
                          </div>
                     </section>
                  </div>
@@ -110,7 +110,7 @@ const Homescreen = ()=>{
                     <div className="fest-banner">
                        <img src={process.env.PUBLIC_URL+ "/images/stream-fest-logo.png"} alt="stream"/>
                        <div>
-                          <h1>Netflix StreamFest</h1>
+                          <h1>Netflix StreamFest is here.</h1>
                           <h2>Watch unlimited. All for free.</h2>
                           <Link to="/movielist/">LEARN MORE <i className="fas fa-chevron-right"></i></Link>
                        </div>
@@ -197,7 +197,7 @@ const Homescreen = ()=>{
                <article>
                   <p>Ready to watch? Enter your email to create or restart your membership.</p>
                   <input type="email" placeholder="Email address"/>
-                  <a href={href}>GET STARTED <i className="fas fa-chevron-right"></i></a>
+                  <Link to="/SignUp/">GET STARTED <i className="fas fa-chevron-right"></i></Link>
                </article>
              </section>
 

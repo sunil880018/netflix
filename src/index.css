@@ -457,12 +457,16 @@ form div p{
 }
 .card img{
   cursor: pointer;
+  transition: transform 300ms ease-in;
 }
 .card p{
   color: #fff;
   font-size: 1rem;
   margin-top: 1rem;
   text-align: center;
+}
+.card img:hover{
+  transform: scale(1.08);
 }
 
 
